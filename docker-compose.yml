@@ -1,0 +1,14 @@
+version: '3'
+services:
+
+  # runs Jekyll static site generator
+  # note: this image does not include
+  #       the Jekyll web server, intentionally
+  jekyll:
+    image: jekyll/builder:4.2.0
+    command: jekyll build --watch
+    volumes:
+      - ./web:/srv/jekyll
+    restart: on-failure
+    env_file:
+      - .env

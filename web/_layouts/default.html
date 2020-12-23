@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang='en'>
+<head>
+	<title>A Big Book of Ideas: Inspiration for Coding Students and Teachers</title>
+	<meta charset='utf-8'>
+	<meta name='viewport' content='width=device-width, initial-scale=1, minimum-scale=1' />
+
+	<link rel='stylesheet' href='https://fonts.googleapis.com/css?family=Montserrat:400,500,700&display=swap'>
+	<link rel='stylesheet' href='https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.css'>
+
+	<link rel='stylesheet' href='assets/css/main.css'>
+	{% if page.css_file %}
+	<link rel='stylesheet' href='assets/css/{{ page.css_file }}.css'>
+	{% endif %}
+</head>
+<body class='{{ page.css_class }} page darkmode'>
+<!-- start of header -->
+{% include header.html %}
+<!-- end of header -->
+<div class='sidebar-layout'>
+	<!-- start of sidebar -->
+	{% include sidebar.html %}
+	<!-- end of sidebar -->
+
+	<!-- start of main content -->
+	{{ content }}
+	<!-- end of main content -->
+</div>
+<!-- start of footer -->
+{% include footer.html %}
+<!-- end of footer -->
+
+<script type='module' src='assets/js/main.js'></script>
+{% if page.js_file %}
+<script type='module' src='assets/js/{{ page.js_file }}.js'></script>
+{% endif %}
+</body>
+</html>

@@ -1,1 +1,13 @@
+# Docker environment variables
+.env
+
+# Jekyll static site generator
+.jekyll-cache
+# Jekyll output directory
 public
+
+# Personal resources
+private
+
+# JetBrains IDE config
+.idea

@@ -1,0 +1,29 @@
+---
+layout: default
+title: Home
+css_class: home
+---
+<main class='ideas grid'>
+    {% for post in site.posts %}
+    <div class='idea grid-item {{ post.tags | join: " tag__" | prepend: "tag__" }}'>
+        <div class='grid-item__left'>
+            <img class='grid-item__img' src='assets/images/tic-tac-toe.png' alt='' />
+            <label class='claps-label'>
+                0
+                <button class='claps-btn'>👏</button>
+            </label>
+        </div>
+        <div class='grid-item__text'>
+            <h4 class='grid-item__title'>{{ post.title }}</h4>
+            <p class='grid-item__desc'>{{ post.description }}</p>
+            <p class='grid-item__tags'>tags:
+                {% for tag in post.tags %}
+                <a class='grid-item__tag-links' href=''>{{ tag }}</a>,
+                {% endfor %}
+            </p>
+        </div>
+    </div>
+    {% else %}
+    <p class='no-results'>Hmmm.. no results match these filters.</p>
+    {% endfor %}
+</main>
