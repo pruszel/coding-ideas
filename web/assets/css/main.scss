@@ -1,0 +1,13 @@
+---
+help: "This 'front matter' at the top tells Jekyll it needs to process this file."
+help: "The @import 'variables' tells Jekyll to look for a file called variables.scss in the sass directory _sass/"
+---
+@charset "UTF-8";
+
+@import 'variables';
+@import 'theme';
+@import 'sidebar';
+@import 'header';
+@import 'footer';
+
+@import 'components/idea';

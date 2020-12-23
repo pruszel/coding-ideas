@@ -1,0 +1,50 @@
+.idea {
+  display: flex;
+  align-items: flex-start;
+  width: 92%;
+  padding: 20px 20px 20px 30px;
+  margin: 10px auto 40px auto;
+  border-bottom: 1px solid $olive;
+  background: $dark-grey;
+}
+.idea__left {
+  margin-right: 20px;
+}
+.idea__img {
+  width: 50px;
+  height: auto;
+}
+.idea__claps {
+  display: block;
+  width: 100%;
+  cursor: pointer;
+  padding-top: 10px;
+}
+.idea__clap-btn {
+  background: none;
+  border: none;
+  cursor: pointer;
+  font-size: 1.25em;
+  outline: none;
+}
+.idea__title {
+  margin: 0 0 10px;
+  font-size: 1.1em;
+}
+.idea__desc {
+  font-size: 0.9em;
+  margin: 0 0 20px;
+}
+.idea__tags {
+  font-size: 1em;
+  margin: 0;
+  font-style: italic;
+}
+.idea__tag-link {
+  color: $near-white;
+  text-decoration: none;
+}
+.idea__tag-link:hover {
+  color: $white;
+  text-decoration: underline;
+}
