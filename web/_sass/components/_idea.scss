@@ -1,9 +1,10 @@
 .idea {
   display: flex;
   align-items: flex-start;
-  width: 92%;
+  width: 95%;
+  max-width: 800px;
   padding: 20px 20px 20px 30px;
-  margin: 10px auto 40px auto;
+  margin: 10px 0 40px 0;
   border-bottom: 1px solid $olive;
   background: $dark-grey;
 }
