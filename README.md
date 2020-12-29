@@ -2,7 +2,7 @@
 
 Inspiration for Coding Students and Teachers
 
-[Visit website]()
+[Visit website](https://coding-ideas.netlify.app/)
 
 ## Contributing Ideas
 
@@ -13,20 +13,25 @@ coding is necessary. Just follow the simple steps below.
 title of your idea: `YYYY-MM-DD-my-idea.md`.
 
 1. In that file, add the necessary fields like the name, description, and tags 
-for your idea. It's best to look at an [existing file]() to understand the format.
+for your idea. It's best to look at an
+[existing file](https://github.com/peterlopez/coding-ideas/tree/master/web/_posts) 
+to understand the format.
 
-1. Submit a [pull request]() with your file, and that's it! Once approved, 
-your idea will be published online.
+1. Submit a [pull request](https://github.com/peterlopez/coding-ideas/pulls) 
+with your file, and that's it! Once approved, your idea will be published 
+online.
 
 ## Contributing to Development
 
 Interested in adding new features or fixing bugs? Great! Please take a moment
-to search through existing [Issues]() on GitHub first. Create a new Issue
-with your suggestion(s) if they are not already present.
+to search through existing 
+[Issues](https://github.com/peterlopez/coding-ideas/issues) 
+on GitHub first. Create a new Issue with your suggestion(s) 
+if they are not already present.
 
 ### Development setup
 
-The site uses [Jekyll]() to compile assets and content.
+The site uses [Jekyll](https://jekyllrb.com/docs/) to compile assets and content.
 Jekyll can be run inside a Docker container from the command line:
 
 `$ docker-compose run jekyll`
