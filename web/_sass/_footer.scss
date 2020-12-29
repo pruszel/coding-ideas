@@ -1,13 +1,19 @@
 footer {
-  padding: 10px 0 12px 1em;
+  padding: 10px 0 12px 0;
   border-top: 1px solid $grey;
+  display: grid;
+  grid-template: auto / 250px 1fr;
 }
 footer a,
 footer a:visited {
+  margin-left: 1em;
   color: $near-white;
   text-decoration: none;
 }
 footer a:hover {
   color: $white;
   text-decoration: underline;
+}
+.ideas-count {
+  margin: 0 0 0 20px;
 }

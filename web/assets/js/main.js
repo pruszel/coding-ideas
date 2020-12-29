@@ -13,6 +13,30 @@ function shuffleIdeas(event) {
 
 
 /**
+ * Updates count of ideas visible on page
+ * should be called on DOM ready and whenever filters change
+ *
+ * @param event
+ */
+function updateVisibleIdeasCount(event) {
+    const $ideasVisible = document.querySelectorAll(".idea:not([style*='display: none'])");
+    const $ideasVisibleCount = document.querySelector(".ideas-visible");
+    $ideasVisibleCount.textContent = $ideasVisible.length.toString();
+}
+
+
+/**
+ * Updates count of total ideas on page
+ * should only be called once on DOM ready
+ */
+function updateTotalIdeasCount() {
+    const $ideasList = document.querySelector(".idea-list");
+    const $ideasTotal = document.querySelector(".ideas-total");
+    $ideasTotal.textContent = $ideasList.children.length.toString();
+}
+
+
+/**
  * Show or hide ideas based on changed filter
  * called after onchange event fires on a filter checkbox
  *
@@ -29,6 +53,8 @@ function filterHandler(event) {
         if (event.target.checked) $idea.style.display = "";
         else $idea.style.display = "none";
     });
+
+    updateVisibleIdeasCount();
 }
 
 
@@ -56,3 +82,5 @@ function ready(callback) {
 }
 
 ready(bindEventHandlers);
+ready(updateTotalIdeasCount);
+ready(updateVisibleIdeasCount);
