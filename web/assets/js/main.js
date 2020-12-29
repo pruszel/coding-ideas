@@ -1,3 +1,16 @@
+/**
+ * Uses Fisher–Yates shuffle to randomize order of ideas in list
+ * called after onclick event fires on shuffle button
+ *
+ * @param event
+ */
+function shuffleIdeas(event) {
+    const $ideas = document.querySelector('.idea-list');
+    for (let i = $ideas.children.length; i >= 0; i--) {
+        $ideas.appendChild($ideas.children[Math.random() * i | 0]);
+    }
+}
+
 
 /**
  * Show or hide ideas based on changed filter
@@ -18,6 +31,7 @@ function filterHandler(event) {
     });
 }
 
+
 /**
  * Should be called after document ready
  */
@@ -26,7 +40,11 @@ function bindEventHandlers() {
     $filters.forEach($filter => {
         $filter.addEventListener("change", filterHandler);
     });
+
+    let shuffleButton = document.querySelector(".js_shuffle");
+    shuffleButton.addEventListener("click", shuffleIdeas);
 }
+
 
 /**
  * Call this function to do things after DOM has fully loaded
