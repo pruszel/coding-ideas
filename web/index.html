@@ -18,7 +18,7 @@ css_class: home
             <p class='idea__desc'>{{ post.description }}</p>
             <p class='idea__tags'>tags:
                 {% for tag in post.tags %}
-                <a class='idea__tag-link' href=''>{{ tag }}</a>,
+                <span class='idea__tag'>{{ tag }}</span>,
                 {% endfor %}
             </p>
         </div>

@@ -42,11 +42,11 @@
   margin: 0;
   font-style: italic;
 }
-.idea__tag-link {
+.idea__tag {
   color: $near-white;
-  text-decoration: none;
+  //cursor: pointer;
 }
-.idea__tag-link:hover {
-  color: $white;
-  text-decoration: underline;
-}
+//.idea__tag:hover {
+//  color: $white;
+//  text-decoration: underline;
+//}
