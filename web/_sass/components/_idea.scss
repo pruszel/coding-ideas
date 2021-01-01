@@ -3,18 +3,37 @@
   align-items: flex-start;
   width: 95%;
   max-width: 800px;
-  padding: 20px 20px 20px 30px;
-  margin: 10px 0 40px 0;
+  padding: 20px;
+  margin: 0 0 0 0;
+  border-radius: 7px 7px 0 0;
   border-bottom: 1px solid $olive;
+  border-top: 1px solid $dark-grey;
+  box-shadow: 0 11px 22px -10px $black;
   background: $dark-grey;
+  transition: background-color, margin 200ms;
+  cursor: default;
 }
+.idea:hover {
+  padding-bottom: 18px !important;
+  background: $grey;
+  background-color: $near-black;
+  border-bottom: 3px solid $olive;
+}
+.idea--has-link:hover {
+  cursor: pointer;
+}
+
 .idea__left {
   margin-right: 20px;
 }
 .idea__img {
-  width: 50px;
+  opacity: 0.9;
+  width: 120px;
   height: auto;
   display: block;
+}
+.idea:hover .idea__img {
+  opacity: 1;
 }
 .idea__claps {
   display: block;
@@ -31,14 +50,15 @@
 }
 .idea__title {
   margin: 0 0 10px;
-  font-size: 1.1em;
+  font-size: 1.25em;
 }
 .idea__desc {
-  font-size: 0.9em;
+  font-size: 0.95em;
   margin: 0 0 20px;
+  line-height: 1.25;
 }
 .idea__tags {
-  font-size: 1em;
+  font-size: 0.95em;
   margin: 0;
   font-style: italic;
 }

@@ -1,5 +1,5 @@
 html {
-    font-family: $font-body
+    font-family: $font-body;
 }
 body {
     height: 100vh;
@@ -9,12 +9,14 @@ div {
     box-sizing: border-box;
 }
 
+
 /*
  * Helper classes
  */
 .hide {
     display: none;
 }
+
 
 /*
  * Layout
@@ -32,9 +34,31 @@ footer {
 }
 
 
+// 1 col grid for 0 - 800px
 .idea-list {
-    padding: 20px 0 0 20px;
-    overflow: scroll;
+    display: grid;
+    grid-template-columns: 1fr;
+    column-gap: 20px;
+    row-gap: 40px;
+    padding: 20px;
+
+    overflow-y: scroll;
+    overflow-x: hidden;
+
+}
+// 2 col grid for > 800px
+@media all and (min-width: 800px) {
+    .idea-list {
+        grid-template-columns: repeat(2, 1fr);
+        column-gap: 0;
+    }
+}
+// 3 col grid for > 1200px
+@media all and (min-width: 1200px) {
+    .idea-list {
+        grid-template-columns: repeat(3, 1fr);
+        column-gap: 20px;
+    }
 }
 
 
