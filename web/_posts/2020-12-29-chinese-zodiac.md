@@ -1,7 +1,7 @@
 ---
 name: Chinese Zodiac Calendar
 description: Display each animal signs and tell people which sign they are.
-image:
+image: chinese-zodiac.jpg
 link:
 tags:
     - beginner

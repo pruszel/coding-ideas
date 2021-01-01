@@ -1,7 +1,7 @@
 ---
 name: Tower of Hanoi
 description: Code a solver for this famous puzzle using recursion.
-image:
+image: tower-of-hanoi.jpg
 link:
 tags:
     - advanced

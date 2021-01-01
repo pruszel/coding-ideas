@@ -1,7 +1,7 @@
 ---
 name: Calculator
 description: Create a basic or advanced calculator.
-image:
+image: calculator.jpg
 link:
 tags:
     - beginner
