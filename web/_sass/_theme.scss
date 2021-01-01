@@ -34,7 +34,7 @@ footer {
 }
 
 
-// 1 col grid for 0 - 800px
+// 1 col grid for 0 - 900px
 .idea-list {
     display: grid;
     grid-template-columns: 1fr;
@@ -46,8 +46,8 @@ footer {
     overflow-x: hidden;
 
 }
-// 2 col grid for > 800px
-@media all and (min-width: 800px) {
+// 2 col grid for > 900px
+@media all and (min-width: 900px) {
     .idea-list {
         grid-template-columns: repeat(2, 1fr);
         column-gap: 0;
