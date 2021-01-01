@@ -5,10 +5,12 @@
  * @param event
  */
 function shuffleIdeas(event) {
+    console.time("shuffleIdeas");
     const $ideas = document.querySelector('.idea-list');
     for (let i = $ideas.children.length; i >= 0; i--) {
         $ideas.appendChild($ideas.children[Math.random() * i | 0]);
     }
+    console.timeEnd("shuffleIdeas");
 }
 
 
@@ -19,9 +21,11 @@ function shuffleIdeas(event) {
  * @param event
  */
 function updateVisibleIdeasCount(event) {
+    console.time("updateVisibleIdeasCount");
     const $ideasVisible = document.querySelectorAll(".idea:not([style*='display: none'])");
     const $ideasVisibleCount = document.querySelector(".ideas-visible");
     $ideasVisibleCount.textContent = $ideasVisible.length.toString();
+    console.timeEnd("updateVisibleIdeasCount");
 }
 
 
@@ -30,9 +34,11 @@ function updateVisibleIdeasCount(event) {
  * should only be called once on DOM ready
  */
 function updateTotalIdeasCount() {
+    console.time("updateTotalIdeasCount");
     const $ideasList = document.querySelector(".idea-list");
     const $ideasTotal = document.querySelector(".ideas-total");
     $ideasTotal.textContent = $ideasList.children.length.toString();
+    console.timeEnd("updateTotalIdeasCount");
 }
 
 
@@ -43,6 +49,7 @@ function updateTotalIdeasCount() {
  * @param event
  */
 function filterHandler(event) {
+    console.time("filterHandler");
     const className = "tag__" + event.target.name;
     console.debug("Finding ideas with class:", className);
 
@@ -55,6 +62,7 @@ function filterHandler(event) {
     });
 
     updateVisibleIdeasCount();
+    console.timeEnd("filterHandler");
 }
 
 
@@ -84,3 +92,4 @@ function ready(callback) {
 ready(bindEventHandlers);
 ready(updateTotalIdeasCount);
 ready(updateVisibleIdeasCount);
+ready(shuffleIdeas);
