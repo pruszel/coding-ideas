@@ -32,6 +32,12 @@ header {
 footer {
     grid-column: 3 / 1;
 }
+// Single column (no sidebar) on mobile
+@media all and (max-width: 576px) {
+    .page {
+        grid-template-columns: 1fr;
+    }
+}
 
 
 // 1 col grid for 0 - 900px

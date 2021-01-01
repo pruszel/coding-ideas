@@ -4,6 +4,13 @@ footer {
   display: grid;
   grid-template: auto / 250px 1fr;
 }
+@media all and (max-width: 576px) {
+  footer {
+    display: grid;
+    grid-template: auto / 1fr 1fr;
+  }
+}
+
 footer a,
 footer a:visited {
   margin-left: 1em;
