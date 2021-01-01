@@ -6,7 +6,7 @@
   border-right: 1px solid #8b8b8b;
   padding: 20px 10px 0 20px;
 }
-@media all and (max-width: 576px) {
+@media all and (max-width: $sm-breakpoint) {
   .sidebar {
     display: none;
   }

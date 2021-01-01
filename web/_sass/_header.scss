@@ -17,7 +17,7 @@ header h1 {
 header h2 {
     margin: 0;
 }
-@media all and (min-width: 800px) {
+@media all and (min-width: $md-breakpoint) {
     header h1,
     header h2 {
         text-align: left;

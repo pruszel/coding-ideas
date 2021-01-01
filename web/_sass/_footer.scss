@@ -4,7 +4,7 @@ footer {
   display: grid;
   grid-template: auto / 250px 1fr;
 }
-@media all and (max-width: 576px) {
+@media all and (max-width: $sm-breakpoint) {
   footer {
     display: grid;
     grid-template: auto / 1fr 1fr;
