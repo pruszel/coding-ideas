@@ -7,7 +7,9 @@ css_class: home
     {% for post in site.posts %}
     <div class='idea {{ post.tags | join: " tag__" | prepend: "tag__" }}'>
         <div class='idea__left'>
+            {% if post.image %}
             <img class='idea__img' src='assets/images/ideas/{{ post.image }}' alt='' />
+            {% endif %}
 <!--            <label class='idea__claps'>-->
 <!--                <span class='clap__num'>0</span>-->
 <!--                <button class='clap__btn'>👏</button>-->
