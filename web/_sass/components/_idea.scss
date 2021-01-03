@@ -18,6 +18,14 @@
   background: $grey;
   background-color: $near-black;
   border-bottom: 3px solid $olive;
+  color: $white;
+
+  .idea__img {
+    opacity: 1;
+  }
+  .idea__link {
+    text-decoration: underline;
+  }
 }
 .idea--has-link:hover {
   cursor: pointer;
@@ -26,32 +34,23 @@
 .idea__left {
   margin-right: 20px;
 }
+
 .idea__img {
   opacity: 0.9;
   width: 120px;
   height: auto;
   display: block;
 }
-.idea:hover .idea__img {
-  opacity: 1;
-}
-.idea__claps {
-  display: block;
-  width: 100%;
-  cursor: pointer;
-  padding-top: 10px;
-}
-.idea__clap-btn {
-  background: none;
-  border: none;
-  cursor: pointer;
-  font-size: 1.25em;
-  outline: none;
-}
+
 .idea__title {
   margin: 0 0 10px;
   font-size: 1.25em;
 }
+.idea__link {
+  color: $near-white;
+  text-decoration: none;
+}
+
 .idea__desc {
   font-size: 0.95em;
   margin: 0 0 20px;
@@ -69,4 +68,18 @@
 //.idea__tag:hover {
 //  color: $white;
 //  text-decoration: underline;
+//}
+
+//.idea__claps {
+//  display: block;
+//  width: 100%;
+//  cursor: pointer;
+//  padding-top: 10px;
+//}
+//.idea__clap-btn {
+//  background: none;
+//  border: none;
+//  cursor: pointer;
+//  font-size: 1.25em;
+//  outline: none;
 //}

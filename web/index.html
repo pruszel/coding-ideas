@@ -16,7 +16,11 @@ css_class: home
 <!--            </label>-->
         </div>
         <div class='idea__right'>
+            {% if post.link %}
+            <h4 class='idea__title'><a class='idea__link' href='{{post.link}}' target='_blank' rel='noopener noreferrer'>{{ post.name }}</a></h4>
+            {% else %}
             <h4 class='idea__title'>{{ post.name }}</h4>
+            {% endif %}
             <p class='idea__desc'>{{ post.description }}</p>
             <p class='idea__tags'>tags:
                 {% for tag in post.tags %}
