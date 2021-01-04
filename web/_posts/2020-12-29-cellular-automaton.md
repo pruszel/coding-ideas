@@ -1,7 +1,7 @@
 ---
 name: Cellular Automaton
 description: A fun way to create interesting patterns based on simple rules.
-image: cellular-automaton.png
+image: cellular-automaton.jpg
 link:
 tags:
     - intermediate
