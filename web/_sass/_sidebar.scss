@@ -4,7 +4,7 @@
   overflow: scroll;
   background: rgba($olive, .8);
   border-right: 1px solid #8b8b8b;
-  padding: 20px 10px 0 20px;
+  padding: 60px 10px 0 20px;
 }
 @media all and (max-width: $sm-breakpoint) {
   .sidebar {
@@ -15,25 +15,20 @@
 .js_shuffle {
   position: relative;
   display: inline-block;
-  width: 110px;
-  padding: 5px 10px;
-  margin: 10px auto 20px;
-  border-radius: 5px;
   cursor: pointer;
   outline: none;
-  font-size: 1.25em;
-  font-weight: bold;
-  border: 1px solid $light-grey;
-  background: $near-white;
-  transition: background-color, top 300ms;
-  box-shadow: 0 8px 20px -10px $black;
+  user-select: none;
+  border: 2px dashed #49497f;
+  border-radius: 50%;
+  opacity: 0.85;
+  transition: opacity, top 300ms;
 }
 .js_shuffle:active{
   top: 4px;
-  box-shadow: none;
 }
 .js_shuffle:hover {
-  background-color: $white;
+  opacity: 1;
+  border-color: yellow;
 }
 
 .sidebar__filter {

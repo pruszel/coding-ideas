@@ -1,7 +1,9 @@
 header {
+    display: grid;
+    grid-template-columns: 250px 1fr;
     position: relative;
     z-index: 10;
-    padding: 20px 10px;
+    padding: 20px 0;
     border-bottom: 1px solid $grey;
     box-shadow: 0px -7px 15px 10px $black;
 
@@ -14,6 +16,19 @@ header {
     h1 { margin: 0 0 15px; }
     h2 { margin: 0; }
 }
+.header__img-container {
+    display: flex;
+    align-items: flex-end;
+    text-align: center;
+    justify-content: center;
+}
+.header__img {
+    width: 100%;
+    max-width: 100px;
+    margin: 0 0 -60px 0;
+}
+
+
 @media all and (max-width: $sm-breakpoint) {
     header {
         h1 { font-size: 1.5em; }
@@ -22,9 +37,9 @@ header {
 }
 @media all and (min-width: $md-breakpoint) {
     header {
-        h1, h2 {
-            text-align: left;
-            margin-left: 20px !important;
-        }
+        h1, h2 { text-align: left; }
+    }
+    .header__text {
+        margin-left: 20px;
     }
 }
